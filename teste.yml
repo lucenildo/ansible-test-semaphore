@@ -1,0 +1,8 @@
+---
+#- hosts: rs1-lab
+- hosts: bird-rs-lab
+  gather_facts: no
+  connection: local
+  tasks:
+       - name: Teste comunicação
+         ping: 
